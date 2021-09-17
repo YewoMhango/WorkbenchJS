@@ -1,0 +1,75 @@
+.numberOrBoolean {
+  color: #c3c321;
+}
+.string {
+  color: #75b927;
+}
+.error {
+  /* color: rgb(255, 0, 0); */
+  color: #c22644;
+}
+.space {
+  opacity: 0;
+}
+.undefined {
+  color: #5f5f5e;
+}
+.null {
+  font-weight: bolder;
+}
+.RegExp {
+  color: #c22644;
+}
+#input {
+  width: 100%;
+  background-color: rgb(50, 51, 44);
+  border-width: 0;
+  padding: 10px;
+}
+#output {
+  background-color: rgb(46, 47, 44);
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  overflow: scroll;
+}
+#output,
+#input {
+  margin-top: 5px;
+  font-family: monospace;
+  font-size: 16px;
+  color: whitesmoke;
+  height: 90%;
+}
+body,
+button {
+  color: whitesmoke;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+button {
+  background-color: rgb(0, 95, 149);
+  border-width: 0;
+  border-radius: 2px;
+  float: right;
+}
+body {
+  background-color: #272822;
+}
+.panel {
+  width: 49%;
+  display: inline-block;
+}
+#outPanel {
+  float: right;
+}
+@media screen and (max-width: 550px) {
+  .panel {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+  }
+  #input,
+  #output {
+    height: 45%;
+  }
+}
