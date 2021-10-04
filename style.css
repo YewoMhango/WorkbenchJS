@@ -1,3 +1,7 @@
+* {
+  transition: all 0.1s ease;
+}
+
 .numberOrBoolean {
   color: #c3c321;
 }
@@ -20,26 +24,46 @@
 .RegExp {
   color: #c22644;
 }
+.function {
+  color: #55acbb;
+}
+
 #input {
+  --padding: 10px;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#input textarea {
   background-color: rgb(50, 51, 44);
   border-width: 0;
-  padding: 10px;
+  padding: var(--padding);
+  width: 100%;
+  display: inline-block;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  overflow: scroll;
 }
 #output {
   background-color: rgb(46, 47, 44);
-  padding: 10px;
-  font-family: "Courier New", Courier, monospace;
   overflow: scroll;
+  padding: 0;
 }
 #output,
 #input {
   margin-top: 5px;
-  font-family: monospace;
+  font-family: Consolas, "Courier New", Courier, monospace;
   font-size: 16px;
   color: whitesmoke;
-  height: 90%;
+  height: calc(100% - 35px);
+  line-height: 20px;
 }
+#output > div {
+  border-bottom: 1px rgb(70, 70, 70) solid;
+  padding: 8px 10px;
+}
+
 body,
 button {
   color: whitesmoke;
@@ -58,6 +82,7 @@ body {
 .panel {
   width: 49%;
   display: inline-block;
+  height: 100%;
 }
 #outPanel {
   float: right;
@@ -67,9 +92,6 @@ body {
     margin-top: 10px;
     display: block;
     width: 100%;
-  }
-  #input,
-  #output {
-    height: 45%;
+    height: 50%;
   }
 }
